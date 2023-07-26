@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global */
 * {
   padding: 0;
@@ -11,10 +12,7 @@ html {
   font-weight: 400;
   font-size: 10px;
   color: #f2f2f2;
-}
-
-body {
-  background-color: #609966;
+  scroll-behavior: smooth;
 }
 
 /* Nav */
@@ -23,12 +21,15 @@ body {
 }
 
 nav {
-  background-color: #202426;
+  background-color: rgba(4, 5, 5, 0.6);
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  width: 100%;
   padding: 1em;
+  z-index: 100;
 }
 
 .navList {
@@ -98,7 +99,7 @@ nav {
     position: absolute;
     right: 0;
     top: 10vh;
-    background-color: rgba(32, 36, 38, 0.7);
+    background-color: rgba(4, 5, 5, 0.6);
     height: 90vh;
     flex-direction: column;
     text-align: center;
@@ -117,4 +118,49 @@ nav {
     width: 100%;
   }
 }
-/* Home *//*# sourceMappingURL=style.css.map */
+/* Home */
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/tło.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+  z-index: 10;
+}
+
+/* About */
+#about {
+  background-color: violet;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Projects */
+#projects {
+  background-color: indigo;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Options */
+#opinions {
+  background-color: goldenrod;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Contact */
+#contact {
+  background-color: chocolate;
+  height: 85vh;
+  width: 100%;
+}
+
+/* Fotter*/
+footer {
+  background-color: aqua;
+  height: 15vh;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
