@@ -9,7 +9,7 @@
 html {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 10px;
   color: #f2f2f2;
   scroll-behavior: smooth;
@@ -23,6 +23,32 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 10px;
+  height: inherit;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
 /* Nav */
 .logo {
   height: 100%;
@@ -32,7 +58,7 @@ nav {
   background-color: rgba(4, 5, 5, 0.6);
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 10vh;
   width: 100%;
@@ -43,7 +69,7 @@ nav {
 .navList {
   list-style-type: none;
   display: flex;
-  width: 80%;
+  width: 60%;
   justify-content: space-around;
 }
 
@@ -106,6 +132,10 @@ nav {
   }
   .burger.navListActive .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0 25px;
   }
   .navList {
     position: absolute;
@@ -191,23 +221,32 @@ nav {
   width: 100%;
 }
 
-/* Contact */
+/* Contact/Footer */
 #contact {
-  background-image: url("./images/background2.jpg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-position-y: 50%;
+  background-color: #202426;
   z-index: 10;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
+  display: flex;
 }
 
-/* Fotter*/
-footer {
-  background-image: url("./images/background1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 10vh;
-  width: 100%;
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 5rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+}
+
+.contact h4 {
+  padding-top: 40px;
+}
+
+.contact img {
+  height: 120px;
+  width: 120px;
 }/*# sourceMappingURL=style.css.map */
