@@ -1,7 +1,7 @@
 $black: #202426;
 $main: #609966;
 $seconadary: #9dc08b;
-$nav: rgba(4, 5, 5, 0.6);
+$nav: rgba(4, 5, 5, 0.5);
 $grey: #8c8c88;
 $white: #f2f2f2;
 
@@ -23,6 +23,7 @@ html {
 	scroll-behavior: smooth;
 }
 
+
 .scroll-button {
 	font-size: 6rem;
 	margin-top: 20px;
@@ -34,6 +35,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 40px;
 
 } 
 .container {
@@ -57,14 +59,22 @@ h2,
 h3,
 h4,
 h5 {
+	margin-top: 0;
 	font-weight: 300;
 	letter-spacing: 2px;
 	margin-bottom: 40px;
+}
+ h2 {
+	font-size: 3rem;
 }
 
 a {
 	text-decoration: none;
 	color: $white;
+}
+
+p {
+	font-size: 1.8rem;
 }
 
 /* Nav */
@@ -241,7 +251,24 @@ nav {
 	z-index: 10;
 	height: inherit;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
+
+.about h1 {
+	font-size: 5rem;
+	padding: 40px 0;
+	flex-wrap: wrap;
+}
+
+.content {
+	width: 50%;
+
+}
+
+
 
 /* Projects */
 
@@ -276,9 +303,7 @@ nav {
 .contact h1 {
 	font-size: 5rem;
 }
-.contact h2 {
-	font-size: 3rem;
-}
+
 .contact h4 {
 	padding-top: 40px;
 	
